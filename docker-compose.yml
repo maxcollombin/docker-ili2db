@@ -1,0 +1,7 @@
+version: '3'
+services:
+  java_app:
+    image: openjdk:latest
+    volumes:
+      - ./ili2pg:/app
+    command: java -jar /app/ili2pg.jar --help
